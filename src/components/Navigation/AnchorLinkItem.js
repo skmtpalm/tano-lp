@@ -1,9 +1,11 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-const AnchorLinkItem = ({ label, to }) => {
+const AnchorLinkItem = ({ label, to, setNavOpen }) => {
   return (
     <li>
-      <AnchorLink href={`#${to}`}>{label}</AnchorLink>
+      <AnchorLink onClick={() => setNavOpen(false)} href={`#${to}`}>
+        {label}
+      </AnchorLink>
     </li>
   );
 };

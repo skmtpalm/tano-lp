@@ -1,4 +1,7 @@
+import { useState } from "react";
 import AnchorLinkItem from "./AnchorLinkItem";
+import clsx from "clsx";
+import s from "./Navigation.module.css";
 
 const LINKS = [
   {
@@ -35,12 +38,21 @@ const LINKS = [
   },
 ];
 
-const Navigation = () => {
+const Navigation = ({ isOpen, setNavOpen }) => {
   return (
-    <nav>
+    <nav
+      className={clsx(s.wrap, {
+        [s.open]: isOpen,
+      })}
+    >
       <ul>
         {LINKS.map((link) => (
-          <AnchorLinkItem key={link.to} label={link.label} to={link.to} />
+          <AnchorLinkItem
+            setNavOpen={setNavOpen}
+            key={link.to}
+            label={link.label}
+            to={link.to}
+          />
         ))}
       </ul>
     </nav>

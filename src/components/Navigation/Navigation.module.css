@@ -1,0 +1,7 @@
+.wrap {
+  @apply hidden fixed z-10 bg-white h-screen w-full;
+}
+
+.open {
+  @apply flex;
+}
