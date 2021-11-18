@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Hero from "../components/Hero";
-import Intro from "../components/Intro";
 import Feature from "../components/Feature";
 import ProductDetail from "../components/ProductDetail";
 import Producer from "../components/Producer";
@@ -8,7 +6,6 @@ import Outro from "../components/Outro";
 import NanameguriProject from "../components/NanameguriProject";
 import DealersInfo from "../components/DealersInfo";
 import Banners from "../components/Banners";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -16,8 +13,6 @@ export default function Home() {
       <Head>
         <title>菩提もと田の</title>
       </Head>
-      <Hero />
-      <Intro />
       <div id="feature">
         <Feature
           title="無農薬米"

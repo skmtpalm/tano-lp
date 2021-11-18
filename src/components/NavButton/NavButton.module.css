@@ -1,0 +1,20 @@
+.wrap {
+  @apply cursor-pointer w-9 h-9 rounded-full border border-primary p-2 relative;
+
+  transition: all .5s ease-in-out;
+  transform: rotate(0);
+}
+
+.open {
+  transform: rotate(675deg);
+}
+
+.line {
+  @apply absolute top-1/2 left-0 w-full bg-primary;
+  height: 2px;
+}
+
+.line2 {
+  transform: rotate(90deg);
+  transform-origin: center;
+}
