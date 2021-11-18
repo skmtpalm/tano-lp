@@ -2,10 +2,22 @@
   width: 100%;
   fill: white;
   z-index:9999;
+  transition: fill .8s ease-in, transform 1s .2s ease-in-out;
+  transform: rotate(0);
+}
+
+.color {
+  fill: #8e5e25;
+  transform: rotate(360deg);
 }
 
 .no {
   width: 70%;
   fill: white;
   transform: translate(-10%, -10%);
+  transition: all .8s ease-in;
+}
+
+.color2 {
+  fill: #f8b62d;
 }

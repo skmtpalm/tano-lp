@@ -1,5 +1,4 @@
 import heroBgPic from "../../../public/images/hero_bg.jpg";
-import logoPic from "../../../public/images/tano_logo.png";
 import heroPicA from "../../../public/images/hero_01.jpg";
 import heroPicB from "../../../public/images/hero_02.jpg";
 import heroPicC from "../../../public/images/hero_03.jpg";

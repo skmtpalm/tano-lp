@@ -1,10 +1,12 @@
 import s from "./Logo.module.css";
 import clsx from "clsx";
-const Logo = () => {
+const Logo = ({ isChange }) => {
   return (
     <div className="flex flex-col justify-center items-center">
       <svg
-        className={clsx(s.ta)}
+        className={clsx(s.ta, {
+          [s.color]: isChange,
+        })}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 139.45 139.45"
       >
@@ -16,7 +18,9 @@ const Logo = () => {
       </svg>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className={clsx(s.no)}
+        className={clsx(s.no, {
+          [s.color2]: isChange,
+        })}
         viewBox="0 0 84.25 77.17"
       >
         <g id="e4ffddb8-ef7f-4777-8afe-315928031497" data-name="レイヤー 2">
