@@ -1,14 +1,18 @@
-import heroBgPic from "../../../public/images/hero_bg.jpg";
 import heroPicA from "../../../public/images/hero_01.jpg";
 import heroPicB from "../../../public/images/hero_02.jpg";
 import heroPicC from "../../../public/images/hero_03.jpg";
 import s from "./Hero.module.css";
 import clsx from "clsx";
-import Image from "next/image";
+
+import { useInView } from "react-intersection-observer";
 
 import { useState, useEffect, useRef } from "react";
 
 const Hero = () => {
+  const [ref, inView] = useInView({
+    delay: 300,
+  });
+
   const heroImages = [heroPicA, heroPicB, heroPicC];
 
   const [activeIndex, setActiveIndex] = useState(1);
@@ -37,6 +41,8 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
+  console.log("yoiyoi", inView);
+
   return (
     <div id="top" className={clsx(s.root)}>
       {heroImages.map((image, index) => (
@@ -48,6 +54,23 @@ const Hero = () => {
           style={{ backgroundImage: `url(${image.src})` }}
         ></div>
       ))}
+      <div className={clsx(s.overlay)}></div>
+      <p ref={ref} className={clsx(s.copy)}>
+        <span
+          className={clsx(s.yoiyoi, {
+            [s.yoiyoiShow]: inView,
+          })}
+        >
+          よいよい
+        </span>
+        <span
+          className={clsx(s.tanoshi, {
+            [s.tanoshiShow]: inView,
+          })}
+        >
+          うれし　たのし
+        </span>
+      </p>
     </div>
   );
 };
