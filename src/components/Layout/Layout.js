@@ -1,7 +1,8 @@
+import Navigation from "../Navigation";
 const Layout = ({ children }) => {
   return (
     <div>
-      <nav>nav</nav>
+      <Navigation />
       <main>{children}</main>
       <footer>footer</footer>
     </div>
