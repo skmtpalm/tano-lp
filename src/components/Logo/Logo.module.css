@@ -1,0 +1,11 @@
+.ta {
+  width: 100%;
+  fill: white;
+  z-index:9999;
+}
+
+.no {
+  width: 70%;
+  fill: white;
+  transform: translate(-10%, -10%);
+}

@@ -1,0 +1,24 @@
+.root {
+  @apply bg-primary relative h-screen w-full overflow-hidden;
+}
+
+.slide {
+  @apply absolute inset-0 bg-no-repeat bg-center bg-cover;
+  opacity: 0;
+  transition: opacity 2s ease-in, transform 8s ease-in-out;
+  transform: scale(1.2);
+}
+
+.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.wrap {
+  @apply bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center;
+}
+
+.logo {
+  @apply w-2/3 sm:w-1/3;
+}

@@ -16,7 +16,6 @@ export default function Home() {
       <Head>
         <title>菩提もと田の</title>
       </Head>
-      <Hero />
       <Intro />
       <div id="feature">
         <Feature
