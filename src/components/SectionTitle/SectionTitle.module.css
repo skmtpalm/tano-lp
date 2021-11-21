@@ -1,0 +1,11 @@
+.root {
+  @apply container ml-auto py-8 sm:pt-24 sm:pb-16 sm:text-center;
+}
+
+.titleEn {
+  @apply mb-4 uppercase font-sans tracking-widest text-sm text-secondaly;
+}
+
+.title {
+  @apply mb-12 text-3xl font-serif tracking-wider;
+}

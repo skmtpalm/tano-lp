@@ -1,15 +1,21 @@
 import Image from "next/image";
 import s from "./Feature.module.css";
 import clsx from "clsx";
+import { isMobile } from "react-device-detect";
 
 import { useInView } from "react-intersection-observer";
 
-const Feature = ({ mainImg, title, texts = [], reverse }) => {
+const Feature = ({
+  horizontalWriting = false,
+  textSmall = false,
+  mainImg,
+  title,
+  texts = [],
+  reverse,
+}) => {
   const [ref, inView] = useInView({
     delay: 300,
   });
-
-  console.log("feature", inView);
 
   return (
     <section ref={ref} className="pt-24 pb-16 sm:py-32 overflow-hidden">
@@ -41,6 +47,9 @@ const Feature = ({ mainImg, title, texts = [], reverse }) => {
               <p
                 className={clsx(s.text, {
                   [s.textInView]: inView,
+                  [s.textVertical]: !horizontalWriting,
+                  [s.textSmall]: textSmall,
+                  [s.textHorizontal]: isMobile,
                 })}
               >
                 {texts.map((text) => (

@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Feature from "../components/Feature";
 import ProductDetail from "../components/ProductDetail";
-import Producer from "../components/Producer";
 import Outro from "../components/Outro";
 import NanameguriProject from "../components/NanameguriProject";
 import DealersInfo from "../components/DealersInfo";
 import Banners from "../components/Banners";
+import SectionTitle from "../components/SectionTitle";
 
 import heroPicB from "../../public/images/hero_02.jpg";
 
@@ -16,6 +16,7 @@ export default function Home() {
         <title>菩提もと田の</title>
       </Head>
       <div id="feature" className="bg-gray-100">
+        <SectionTitle title={`田ののこだわり`} titleEn={`Commitment`} />
         <Feature
           mainImg={heroPicB}
           title="無農薬米"
@@ -39,17 +40,25 @@ export default function Home() {
         />
       </div>
       <ProductDetail />
+      <Banners />
       <div id="producers">
-        <Producer
-          name="そのだ農園"
+        <SectionTitle title={`生産者紹介`} titleEn={`Producers`} />
+        <Feature
+          reverse
+          textSmall
+          mainImg={heroPicB}
+          title="そのだ農園"
           texts={[
             "静岡県島田市東光寺にて、40年以上有機栽培を続ける農家。",
-            "5月からはじまる田植えでは、田んぼにいる生き物と上手く付き合いながら農薬・化学肥料を一切使わず稲を丁寧に育てる。",
+            "5月からはじまる田植えでは、田んぼにいる生き物と上手く付き合いながら",
+            "農薬・化学肥料を一切使わず稲を丁寧に育てる。",
             "しっかりとした土壌で育つお米は、食感がよく、奥深いうま味が感じられる。",
           ]}
         />
-        <Producer
-          name="杉井酒造"
+        <Feature
+          textSmall
+          mainImg={heroPicB}
+          title="杉井酒造"
           texts={[
             "日本酒『田の』の製造を杉井酒造に委託。",
             "天保13（1842）年から続く老舗の酒蔵で、日本酒、焼酎、味醂と商品は多岐にわたる。",
