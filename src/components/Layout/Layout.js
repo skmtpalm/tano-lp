@@ -23,7 +23,9 @@ const Layout = ({ children }) => {
         <Hero />
         <Intro />
       </header>
-      <main ref={ref}>{children}</main>
+      <main className="bg-gray-50" ref={ref}>
+        {children}
+      </main>
       <footer>footer</footer>
     </div>
   );
