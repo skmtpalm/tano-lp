@@ -1,0 +1,36 @@
+.title {
+  @apply font-sawarabi mb-4 sm:text-2xl;
+}
+
+.limit {
+  @apply inline-block p-2 border-white border font-sawarabi text-sm sm:text-base mb-4;
+}
+
+.info {
+  @apply text-base font-serif;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all .8s .5s ease-in;
+}
+
+.infoInView {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.row {
+  @apply w-full flex flex-col sm:flex-row py-2 sm:py-4 border-b border-white;
+}
+
+.row:first-child {
+  @apply border-t;
+}
+
+.row dt {
+  @apply sm:pr-4  text-gray-300 text-xs sm:text-sm;
+  min-width: 10rem;
+}
+
+.row dd {
+  @apply text-sm sm:text-base
+}
