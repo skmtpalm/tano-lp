@@ -1,0 +1,19 @@
+.root {
+  @apply shadow-md py-2 mb-4 w-full sm:w-1/2 bg-gray-50 flex flex-col sm:flex-row items-center;
+}
+
+.titleEn {
+  @apply text-xl sm:text-3xl font-serif sm:mb-2 tracking-wider;
+}
+
+.title {
+  @apply text-xs sm:text-sm mb-2 sm:mb-0 font-serif text-gray-700;
+}
+
+.header {
+  @apply sm:p-12 border-b sm:border-b-0 sm:border-r border-secondaly text-center;
+}
+
+.content {
+  @apply sm:p-12 p-4 text-sm sm:text-base font-serif;
+}
