@@ -7,14 +7,17 @@ import NanameguriProject from "../components/NanameguriProject";
 import DealersInfo from "../components/DealersInfo";
 import Banners from "../components/Banners";
 
+import heroPicB from "../../public/images/hero_02.jpg";
+
 export default function Home() {
   return (
     <>
       <Head>
         <title>菩提もと田の</title>
       </Head>
-      <div id="feature">
+      <div id="feature" className="bg-gray-100">
         <Feature
+          mainImg={heroPicB}
           title="無農薬米"
           texts={[
             "40年以上有機農家を続ける",
@@ -24,6 +27,8 @@ export default function Home() {
           ]}
         />
         <Feature
+          reverse
+          mainImg={heroPicB}
           title="菩提酛"
           texts={[
             "室町時代に生まれた『菩提酛』",
