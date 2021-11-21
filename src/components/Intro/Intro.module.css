@@ -1,0 +1,21 @@
+.text {
+  @apply text-sm sm:text-xl font-serif block font-thin mb-2 sm:mb-4;
+  min-height: 8px;
+}
+
+.text2 {
+  @apply text-sm sm:text-lg font-serif block font-thin mb-4;
+  min-height: 8px;
+}
+
+.textureBg {
+  @apply bg-no-repeat bg-center bg-cover container sm:ml-auto bg-gray-200 py-16 sm:py-32;
+}
+
+.title {
+  @apply mt-4 sm:mt-0 font-sawarabi text-2xl sm:text-6xl tracking-wider;
+}
+
+.subTitle {
+  @apply sm:text-2xl text-sm font-serif mb-6 sm:mb-12 tracking-wider font-thin mt-1 sm:mt-4 text-yellow-800;
+}

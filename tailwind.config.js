@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   mode: "jit",
   purge: [
@@ -6,6 +8,20 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      "2xl": {
+        max: "1279px",
+      },
+      ...defaultTheme.screens,
+    },
+    container: {
+      padding: {
+        DEFAULT: "2rem",
+        sm: "2rem",
+        lg: "6rem",
+        "2xl": "8rem",
+      },
+    },
     fontFamily: {
       body: ["Noto Sans JP"],
       serif: ["Noto Serif JP", "serif"],
