@@ -41,8 +41,6 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
-  console.log("yoiyoi", inView);
-
   return (
     <div id="top" className={clsx(s.root)}>
       {heroImages.map((image, index) => (
