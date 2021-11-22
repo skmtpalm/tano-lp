@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
         <NavButton setNavOpen={setNavOpen} isOpen={isNavOpen} />
       </div>
       <Navigation setNavOpen={setNavOpen} isOpen={isNavOpen} />
-      <h1 className="fixed w-24 sm:w-40 top-4 left-4 z-50">
+      <h1 className="fixed w-20 sm:w-40 top-4 left-4 z-50">
         <Logo isChange={inView} />
       </h1>
       <header>
@@ -26,7 +26,19 @@ const Layout = ({ children }) => {
       <main className="bg-gray-50" ref={ref}>
         {children}
       </main>
-      <footer>footer</footer>
+      <footer className="bg-black text-white py-8 sm:py-23 px-4 sm:px-8 font-serif">
+        <p className="mb-4 border-b pb-4 tracking-wide text-sm sm:text-lg sm:text-right">
+          お酒は二十歳になってから。
+          <br />
+          <br />
+          飲酒運転は法律で禁止されています。
+          <br />
+          妊娠中および授乳中の飲酒はお控えください。
+          <br />
+          お酒は適量を。
+        </p>
+        <p>&copy;tano 2021</p>
+      </footer>
     </div>
   );
 };

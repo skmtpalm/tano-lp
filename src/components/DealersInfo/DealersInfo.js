@@ -23,10 +23,12 @@ const DEALERS = [
 
 const DealersInfo = () => {
   return (
-    <section id="dealers" className="min-h-screen">
-      {DEALERS.map((dealer) => (
-        <Dealer key={dealer.name} dealer={dealer} />
-      ))}
+    <section className="mb-12">
+      <div className="container ml-auto bg-gray-100 flex flex-col py-8 sm:py-12">
+        {DEALERS.map((dealer) => (
+          <Dealer key={dealer.name} dealer={dealer} />
+        ))}
+      </div>
     </section>
   );
 };

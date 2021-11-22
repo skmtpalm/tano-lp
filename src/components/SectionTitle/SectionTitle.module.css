@@ -3,9 +3,9 @@
 }
 
 .titleEn {
-  @apply mb-4 uppercase font-sans tracking-widest text-sm text-secondaly;
+  @apply mb-2 sm:mb-4 uppercase font-sans tracking-widest text-sm text-secondaly;
 }
 
 .title {
-  @apply mb-12 text-3xl font-serif tracking-wider;
+  @apply mb-4 sm:mb-12 text-3xl font-serif tracking-wider;
 }

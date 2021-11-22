@@ -4,7 +4,7 @@
 }
 
 .text2 {
-  @apply text-sm sm:text-lg font-serif block font-thin mb-4;
+  @apply text-sm sm:text-base font-serif block font-thin mb-4;
   min-height: 8px;
 }
 

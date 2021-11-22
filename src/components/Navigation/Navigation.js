@@ -14,8 +14,8 @@ const LINKS = [
     to: "feature",
   },
   {
-    label: "購入方法",
-    labelEn: "How to buy",
+    label: "商品情報",
+    labelEn: "information",
     to: "howtobuy",
   },
   {
@@ -63,6 +63,15 @@ const Navigation = ({ isOpen, setNavOpen }) => {
             to={link.to}
           />
         ))}
+        <li className="mt-4 sm:mt-8 font-serif">
+          <a
+            href="https://www.instagram.com/7meguri_project/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Instagram
+          </a>
+        </li>
       </ul>
     </nav>
   );

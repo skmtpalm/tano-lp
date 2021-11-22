@@ -1,0 +1,24 @@
+.wrap {
+  min-height: 80vh;
+}
+
+.root {
+  @apply sm:container ml-auto relative flex flex-col;
+}
+
+.textBg {
+  @apply w-full sm:absolute top-0 left-0 pt-20 pb-24 px-8 sm:p-12 text-white sm:w-1/2;
+}
+
+.title {
+  @apply text-2xl sm:text-4xl mb-8 font-sans font-bold;
+}
+.text {
+  @apply sm:w-3/5 text-sm leading-6 sm:leading-8;
+}
+
+.imgBg {
+  @apply sm:z-10 sm:pt-12 sm:absolute top-1/2 right-0 w-full sm:w-3/5;
+
+  transform: translateY(2.25rem);
+}

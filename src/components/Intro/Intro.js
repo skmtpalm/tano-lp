@@ -2,6 +2,7 @@ import clsx from "clsx";
 import s from "./Intro.module.css";
 import heroPicA from "../../../public/images/hero_01.jpg";
 import heroPicB from "../../../public/images/hero_02.jpg";
+import heroPicC from "../../../public/images/hero_03.jpg";
 import bgTexture from "../../../public/images/main_bg_texture.png";
 import Image from "next/image";
 
@@ -48,7 +49,7 @@ const Intro = () => {
       <div className="container sm:ml-auto pr-0 my-12 sm:my-24">
         <div className="flex sm:flex-row-reverse flex-col">
           <div className="sm:w-3/5 w-full">
-            <Image src={heroPicB} alt="heroB" />
+            <Image src={heroPicC} alt="heroB" />
           </div>
           <div className="sm:w-2/5 w-full sm:py-8">
             <h2 className={clsx(s.title)}>田の</h2>

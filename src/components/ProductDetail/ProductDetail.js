@@ -50,7 +50,7 @@ const ProductDetail = () => {
   });
 
   return (
-    <section id="howtobuy" className="min-h-screen">
+    <section id="howtobuy">
       <div className="container ml-auto h-full bg-transparent text-white px-0">
         <div className="flex flex-col sm:flex-row">
           <div className="sm:w-1/2">

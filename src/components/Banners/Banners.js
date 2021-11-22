@@ -12,7 +12,13 @@ const Banners = () => {
       <div className="container ml-auto flex flex-col sm:flex-row">
         <Banner id={"reserve"} title={`予約はこちら`} titleEn={`Reserve`}>
           <p>
-            <a href="">https://ws.formzu.net/fgen/S75904802/</a>
+            <a
+              href="https://ws.formzu.net/fgen/S75904802/"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              https://ws.formzu.net/fgen/S75904802/
+            </a>
           </p>
         </Banner>
         <Banner
@@ -20,12 +26,15 @@ const Banners = () => {
           title={`商品・プロジェクトに関するお問い合わせはこちら`}
           titleEn={`Contact`}
         >
-          <div>
+          <div className="">
             <p>
-              <span>TEL</span>090-4445-9154（提坂）
+              <span className="mr-2">TEL</span>090-4445-9154（提坂）
             </p>
             <p>
-              <span>MAIL</span>100yearsforest@gmail.com
+              <span className="mr-2">MAIL</span>
+              <a href="mailto:100yearsforest@gmail.com">
+                100yearsforest@gmail.com
+              </a>
             </p>
           </div>
         </Banner>
