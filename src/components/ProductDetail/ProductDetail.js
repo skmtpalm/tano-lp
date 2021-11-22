@@ -25,7 +25,7 @@ const ProductDetail = () => {
     },
     {
       label: `製造元`,
-      content: `杉井酒造`,
+      content: `杉井酒造（静岡県藤枝市小石川町4-6-4）`,
     },
     {
       label: `内容量`,
