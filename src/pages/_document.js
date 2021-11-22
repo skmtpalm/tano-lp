@@ -24,7 +24,7 @@ class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta
             property="og:image"
-            content="http://nanameguri.sonodanouen.com/nanameguri_og.jpg"
+            content="http://tano.sonodanouen.com/images/tano_og.jpg"
           />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
