@@ -1,6 +1,7 @@
 import AnchorLinkItem from "./AnchorLinkItem";
 import clsx from "clsx";
 import s from "./Navigation.module.css";
+import Image from "next/image";
 
 const LINKS = [
   {
@@ -50,6 +51,8 @@ const LINKS = [
   },
 ];
 
+import instaIcon from "../../../public/icon/insta.png";
+
 const Navigation = ({ isOpen, setNavOpen }) => {
   return (
     <nav
@@ -74,7 +77,16 @@ const Navigation = ({ isOpen, setNavOpen }) => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            Instagram
+            <span>
+              <Image
+                src={instaIcon}
+                layout="fixed"
+                width={18}
+                height={18}
+                alt="insta"
+              />
+            </span>
+            <span className="ml-2 transform">Instagram</span>
           </a>
         </li>
       </ul>
