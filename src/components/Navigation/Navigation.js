@@ -34,6 +34,11 @@ const LINKS = [
     to: "nanameguriproject",
   },
   {
+    label: "販売店",
+    labelEn: "store",
+    to: "store",
+  },
+  {
     label: "特約店",
     labelEn: "dealers",
     to: "dealers",

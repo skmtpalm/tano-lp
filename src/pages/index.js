@@ -18,6 +18,8 @@ import inekariPicB from "../../public/images/inekari_sub.jpg";
 
 import teamPic from "../../public/images/team.jpg";
 
+import instaIcon from "../../public/icon/insta.png";
+
 const DEALERS = [
   {
     name: "Un jour MARCHE",
@@ -146,6 +148,24 @@ export default function Home() {
               http://morivivi.jp/
             </a>
             )
+          </li>
+          <li className="mt-2">
+            <a
+              href="https://www.instagram.com/7meguri_project/"
+              rel="noreferrer noopenner"
+              target="_blank"
+            >
+              <div className="inline-block transform translate-y-1">
+                <Image
+                  layout="fixed"
+                  width={16}
+                  height={16}
+                  src={instaIcon}
+                  alt="instagram"
+                />
+              </div>
+              <span className="ml-2">Instagram</span>
+            </a>
           </li>
         </ul>
       </Outro>
