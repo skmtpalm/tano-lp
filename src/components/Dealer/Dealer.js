@@ -25,12 +25,14 @@ const Dealer = ({ dealer }) => {
           <span className={clsx(s.label)}>TEL</span>
           {tel}
         </li>
-        <li>
-          <span className={clsx(s.label)}>URL</span>
-          <a href={url} rel="noreferrer noopener" target="_blank">
-            {url}
-          </a>
-        </li>
+        {url && (
+          <li>
+            <span className={clsx(s.label)}>URL</span>
+            <a href={url} rel="noreferrer noopener" target="_blank">
+              {url}
+            </a>
+          </li>
+        )}
       </ul>
     </div>
   );

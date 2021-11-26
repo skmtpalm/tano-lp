@@ -18,6 +18,36 @@ import inekariPicB from "../../public/images/inekari_sub.jpg";
 
 import teamPic from "../../public/images/team.jpg";
 
+const DEALERS = [
+  {
+    name: "Un jour MARCHE",
+    address: "静岡市葵区茶町1-27-2",
+    tel: "054-255-6007",
+    url: "https://kocuu.com/",
+  },
+  {
+    name: "SAKE・キリンヤ",
+    address: "藤枝市大洲1-9-13",
+    tel: "054-635-8210",
+    url: "https://sake-kirinya.jp/",
+  },
+  {
+    name: "リカーズ グリーン",
+    address: "焼津市中新田251-3",
+    tel: "054-624-3210",
+    url: "https://green.ocnk.net/",
+  },
+];
+
+const STORE = [
+  {
+    name: "そのだ農園",
+    address: "島田市東光寺155",
+    tel: "0547-36-4765",
+    url: "",
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -119,9 +149,13 @@ export default function Home() {
           </li>
         </ul>
       </Outro>
+      <div id="store">
+        <SectionTitle title={`販売店`} titleEn={`Store`} />
+        <DealersInfo dealers={STORE} />
+      </div>
       <div id="dealers">
         <SectionTitle title={`特約店`} titleEn={`Dealers`} />
-        <DealersInfo />
+        <DealersInfo dealers={DEALERS} />
       </div>
       <Banners />
     </>
