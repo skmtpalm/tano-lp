@@ -1,5 +1,6 @@
 .wrap {
-  min-height: 80vh;
+  @apply py-12;
+  min-height: 90vh;
 }
 
 .root {
@@ -14,7 +15,7 @@
   @apply text-2xl sm:text-4xl mb-8 font-sans font-bold;
 }
 .text {
-  @apply sm:w-3/5 text-sm leading-6 sm:leading-8;
+  @apply sm:w-4/5 text-sm leading-6 sm:leading-8;
 }
 
 .imgBg {
