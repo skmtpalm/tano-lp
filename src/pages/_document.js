@@ -68,6 +68,10 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@300;500&family=Sawarabi+Mincho&display=swap"
             rel="stylesheet"
           ></link>
+          <meta
+            name="google-site-verification"
+            content="n-6aapDV4UeKCSqp7eNwJKBk9kOTL7C2OludVv1_w7U"
+          />
         </Head>
         <body>
           <Main />
