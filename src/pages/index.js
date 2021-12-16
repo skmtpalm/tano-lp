@@ -46,7 +46,7 @@ const STORE = [
     name: "そのだ農園",
     address: "島田市東光寺155",
     tel: "0547-36-4765",
-    url: "",
+    url: "https://sonodanouen.com",
   },
 ];
 
