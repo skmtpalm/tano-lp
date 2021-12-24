@@ -3,7 +3,7 @@
 }
 
 .titleEn {
-  @apply text-xl sm:text-3xl font-serif sm:mb-2 tracking-wider;
+  @apply text-xl sm:text-3xl font-serif sm:mb-2 tracking-wider whitespace-nowrap;
 }
 
 .title {

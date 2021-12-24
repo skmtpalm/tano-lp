@@ -10,14 +10,14 @@ const Banners = () => {
       }}
     >
       <div className="container ml-auto flex flex-col sm:flex-row">
-        <Banner id={"reserve"} title={`予約はこちら`} titleEn={`Reserve`}>
+        <Banner id={"reserve"} title={`購入はこちら`} titleEn={`EC Site`}>
           <p>
             <a
-              href="https://ws.formzu.net/fgen/S75904802/"
+              href="https://sonodanouen.official.ec/items/55529795"
               rel="noreferrer noopener"
               target="_blank"
             >
-              https://ws.formzu.net/fgen/S75904802/
+              https://sonodanouen.official.ec/items/55529795
             </a>
           </p>
         </Banner>
