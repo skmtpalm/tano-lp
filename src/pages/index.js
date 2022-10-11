@@ -6,9 +6,6 @@ import Outro from "../components/Outro";
 import DealersInfo from "../components/DealersInfo";
 import Banners from "../components/Banners";
 import SectionTitle from "../components/SectionTitle";
-
-import heroPicB from "../../public/images/hero_02.jpg";
-import bodaimotoPic from "../../public/images/bodaimoto.jpg";
 import sonodaPic from "../../public/images/sonodafarm.jpg";
 import sugiiPic from "../../public/images/sugii.jpg";
 
@@ -19,6 +16,10 @@ import inekariPicB from "../../public/images/inekari_sub.jpg";
 import teamPic from "../../public/images/team.jpg";
 
 import instaIcon from "../../public/icon/insta.png";
+
+import koshihikariPic from "../../public/images/2022/koshihikari.jpg";
+import bodaimotoPic from "../../public/images/2022/bodaimoto.jpg";
+import tauePic from "../../public/images/2022/taue.jpg";
 
 const DEALERS = [
   {
@@ -59,24 +60,34 @@ export default function Home() {
       <div id="feature" className="bg-gray-100">
         <SectionTitle title={`田ののこだわり`} titleEn={`Commitment`} />
         <Feature
-          mainImg={heroPicB}
-          title="無農薬米"
+          mainImg={bodaimotoPic}
+          title="菩提酛づくり"
           texts={[
-            "４０年以上有機農家を続ける",
-            "そのだ農園のコシヒカリ…",
-            "ひとつひとつ手植えで育てた",
-            "特別なお米です",
+            "造りの誕生は、室町時代。",
+            "自然の流れに沿ってゆっくり醸すからこそ、",
+            "唯一無二の深い味わいが",
+            "余韻となって感じられます。",
           ]}
         />
         <Feature
           reverse
-          mainImg={bodaimotoPic}
-          title="菩提酛"
+          mainImg={koshihikariPic}
+          title="コシヒカリ"
           texts={[
-            "室町時代に生まれた『菩提酛』",
-            "日本酒造りの原型とも言われる",
-            "一度は途絶えた希少な造りで",
-            "じっくり丁寧に仕込みました",
+            "噛むほどに甘みのある飯米のコシヒカリ。",
+            "毎日食べているお米と、米麹と水、",
+            "たった３つの原材料で「田の」は出来ました。",
+            "農薬・化学肥料不使用のお米です。",
+          ]}
+        />
+        <Feature
+          mainImg={tauePic}
+          title="手植え"
+          texts={[
+            "老若男女がどろんこになりながら",
+            "丁寧に稲を手植えし、お米を育てました。",
+            "お家の食卓で、みんなが集まる場所で、",
+            "白飯とともに美味しいひと時を。 ",
           ]}
         />
       </div>
@@ -108,9 +119,9 @@ export default function Home() {
           ]}
         />
       </div>
-      <Outro title="地域とともに歩く" anchorId="outro" mainImg={inekariPic}>
-        <span>
-          日本酒『田の』のコシヒカリは、そのだ農園の指導の元『森あそびのまなび場』（http://morivivi.jp/）の田植え企画『どろんこまつり』にて、親子でひとつひとつ手植えして育てたものです。「田んぼ」「楽しい」という想いを込めて、「田の」と名付けました。お米の一粒一粒は、ごはんとして食べられるだけでなく、麹になり、お酒へも変化します。多様に変化する米の魅力を、複雑味のある味わい深い日本酒『田の』から感じてもらえたらうれしいです。大人はお酒を、子どもは新米を。家族みんなで楽しい食卓が生まれることを願っています。
+      <Outro title="地域とともに、育てていく" anchorId="outro" mainImg={inekariPic}>
+        <span>菩提酛『田の』の原材料であるコシヒカリは、そのだ農園の指導の元、『森あそびのまなび場』(http:// morivivi.jp/)の『どろんこ祭り 〜田植え編〜』にて、親子でひとつひとつ手植えして育てたお米です。「田んぼ」「楽しい」という想いを􏰁せて、『田の』と名付けました。<br />
+          お米の一粒一粒はごはんとして食べられるだけではなく、発酵の力を借りることで麹となり、さらにお酒へと変化します。多彩なパワーのある米の魅力を、自然の力を借りてじっくり醸した『田の』から感じてもらえればうれしいです。大人は日本酒を、子どもは新米を。家族みんなで楽しい食卓が生まれることを願っています。
         </span>
         <div className="mt-2">
           <Image src={inekariPicB} alt="ineklari" />

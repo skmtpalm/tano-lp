@@ -1,0 +1,9 @@
+.wrapper {
+  @apply shadow-md py-6 mx-auto mb-8 w-full  bg-gray-50 flex flex-col items-center;
+  cursor: pointer;
+  max-width: 800px;
+}
+
+.wrapper:hover {
+  background-color: rgb(245, 158, 11);
+}

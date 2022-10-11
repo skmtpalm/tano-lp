@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import BannerBtn from "./BannerBtn";
 import bgTexture from "../../../public/images/main_bg_texture.png";
 
 const Banners = () => {
@@ -9,18 +10,11 @@ const Banners = () => {
         backgroundImage: `url(${bgTexture.src})`,
       }}
     >
-      <div className="container ml-auto flex flex-col sm:flex-row">
-        <Banner id={"reserve"} title={`購入はこちら`} titleEn={`EC Site`}>
-          <p>
-            <a
-              href="https://sonodanouen.official.ec/items/55529795"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              https://sonodanouen.official.ec/items/55529795
-            </a>
-          </p>
-        </Banner>
+      <div className="container ml-auto flex flex-col">
+        <BannerBtn
+          title={`ご予約フォーム`}
+          text={`ご予約はこちら`}
+        />
         <Banner
           id={"contact"}
           title={`商品・プロジェクトに関するお問い合わせはこちら`}
