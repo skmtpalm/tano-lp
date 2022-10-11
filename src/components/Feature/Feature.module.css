@@ -1,5 +1,5 @@
 .bgTitle {
-  @apply text-7xl sm:text-9xl text-opacity-10 text-primary absolute -top-16 sm:-top-24 -right-2 sm:-right-1/3 font-serif leading-none;
+  @apply text-6xl sm:text-9xl text-opacity-10 text-primary absolute -top-16 sm:-top-24 -right-2 sm:-right-1/3 font-serif leading-none;
   transition: all 1s ease-in-out;
   transform: translateX(-50px);
   opacity: 0;
