@@ -13,7 +13,7 @@
 }
 
 .title {
-  @apply mt-4 sm:mt-0 font-sawarabi text-2xl sm:text-6xl tracking-wider;
+  @apply mt-4 sm:mt-0 font-sawarabi text-2xl sm:text-4xl tracking-wider;
 }
 
 .subTitle {

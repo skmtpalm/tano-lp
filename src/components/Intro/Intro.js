@@ -1,10 +1,10 @@
 import clsx from "clsx";
 import s from "./Intro.module.css";
-import heroPicA from "../../../public/images/hero_01.jpg";
-import heroPicB from "../../../public/images/hero_02.jpg";
-import heroPicC from "../../../public/images/hero_03.jpg";
 import bgTexture from "../../../public/images/main_bg_texture.png";
+import introPic01 from "../../../public/images/2022/intro_01.jpg"
+import introPic02 from "../../../public/images/2022/hiro_01.jpg"
 import Image from "next/image";
+
 
 const Intro = () => {
   const texts = [
@@ -42,18 +42,18 @@ const Intro = () => {
             ))}
           </p>
           <div className="w-full sm:w-1/2 sm:block hidden">
-            <Image src={heroPicA} alt="hero1" />
+            <Image src={introPic01} alt="about tano" />
           </div>
         </div>
       </div>
       <div className="container sm:ml-auto pr-0 my-12 sm:my-24">
         <div className="flex sm:flex-row-reverse flex-col">
           <div className="sm:w-3/5 w-full">
-            <Image src={heroPicC} alt="heroB" />
+            <Image src={introPic02} alt="about tano" />
           </div>
           <div className="sm:w-2/5 w-full sm:py-8">
-            <h2 className={clsx(s.title)}>田の</h2>
-            <p className={clsx(s.subTitle)}>TANO</p>
+            <h2 className={clsx(s.title)}>菩提酛 田の 2022</h2>
+            <p className={clsx(s.subTitle)}>TANO 2022</p>
             <p className="mr-8 sm:mr-12 leading-10">
               {texts2.map((text, index) => (
                 <span key={index} className={clsx(s.text2)}>
@@ -63,7 +63,7 @@ const Intro = () => {
             </p>
 
             <div className="mt-4 sm:mt-12 bg-black text-white py-2 px-4 font-serif text-lg sm:text-2xl">
-              <h3>2021年12月18日(土)発売予定</h3>
+              <h3>2022年12月18日(日)発売予定</h3>
             </div>
           </div>
         </div>

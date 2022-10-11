@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
           <br />
           お酒は適量を。
         </p>
-        <p>&copy;tano 2021</p>
+        <p>&copy;tano 2022</p>
       </footer>
     </div>
   );

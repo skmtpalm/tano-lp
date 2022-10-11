@@ -1,8 +1,14 @@
-import heroPicA from "../../../public/images/hero_01.jpg";
-import heroPicB from "../../../public/images/hero_02.jpg";
-import heroPicC from "../../../public/images/hero_03.jpg";
+import heroPic0 from "../../../public/images/2022/hiro_00.jpg";
+import heroPicB from "../../../public/images/2022/hiro_02.jpg";
+import heroPicC from "../../../public/images/2022/intro_02.jpg";
+import heroPicD from "../../../public/images/2022/hiro_04.jpg";
+
+import tanoCopyLogo from "../../../public/images/2022/tano_name.png";
+import tanoCopyText from "../../../public/images/2022/tano_text.png"
+
 import s from "./Hero.module.css";
 import clsx from "clsx";
+import Image from "next/image"
 
 import { useInView } from "react-intersection-observer";
 
@@ -13,7 +19,7 @@ const Hero = () => {
     delay: 300,
   });
 
-  const heroImages = [heroPicA, heroPicB, heroPicC];
+  const heroImages = [heroPic0, heroPicB, heroPicC];
 
   const [activeIndex, setActiveIndex] = useState(1);
   const autoPlayRef = useRef(null);
@@ -53,22 +59,12 @@ const Hero = () => {
         ></div>
       ))}
       <div className={clsx(s.overlay)}></div>
-      <p ref={ref} className={clsx(s.copy)}>
-        <span
-          className={clsx(s.yoiyoi, {
-            [s.yoiyoiShow]: inView,
-          })}
-        >
-          よいよい
-        </span>
-        <span
-          className={clsx(s.tanoshi, {
-            [s.tanoshiShow]: inView,
-          })}
-        >
-          うれし　たのし
-        </span>
-      </p>
+      <div className={s.CopyLogoWrapper}>
+        <Image src={tanoCopyLogo} layout="fill" objectFit="contain" alt="菩提酛田の2022" />
+      </div>
+      <div className={s.CopyTextWrapper}>
+        <Image src={tanoCopyText} layout="fill" objectFit="contain" alt="コシヒカリが、お酒になりました" />
+      </div>
     </div>
   );
 };

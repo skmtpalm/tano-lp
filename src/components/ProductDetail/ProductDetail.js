@@ -1,4 +1,4 @@
-import productPic from "../../../public/images/tano_product.jpg";
+import productPic from "../../../public/images/2022/tano2022.jpg"
 import Image from "next/image";
 import clsx from "clsx";
 import s from "./ProductDetail.module.css";
@@ -29,11 +29,7 @@ const ProductDetail = () => {
     },
     {
       label: `内容量`,
-      content: `720㎖`,
-    },
-    {
-      label: `価格`,
-      content: `2,090円（税込）`,
+      content: `720㎖ / 1800ml`,
     },
     {
       label: `販売店`,
@@ -41,7 +37,7 @@ const ProductDetail = () => {
     },
     {
       label: `販売日`,
-      content: `2021年 12月18日（土）（予定）`,
+      content: `2022年 12月18日（日）※予定`,
     },
   ];
 
@@ -62,7 +58,6 @@ const ProductDetail = () => {
           >
             <div className="flex justify-between">
               <h3 className={clsx(s.title)}>商品情報</h3>
-              <p className={clsx(s.limit)}>数量限定 650本</p>
             </div>
             <dl
               className={clsx(s.info, {
