@@ -66,10 +66,10 @@
 
 .CopyLogoWrapper {
   position: absolute;
-  bottom: 5%;
+  top: 10%;
   right: 5%;
   z-index: 5;
-  width: 50px;
+  width: 70px;
   height: 100px;
 }
 
