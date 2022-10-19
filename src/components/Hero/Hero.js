@@ -1,7 +1,6 @@
 import heroPic0 from "../../../public/images/2022/hiro_00.jpg";
 import heroPicB from "../../../public/images/2022/hiro_02.jpg";
-import heroPicC from "../../../public/images/2022/intro_02.jpg";
-import heroPicD from "../../../public/images/2022/hiro_04.jpg";
+import heroPicD from "../../../public/images/2022/intro_03.jpg";
 
 import tanoCopyLogo from "../../../public/images/2022/tano_name.png";
 import tanoCopyText from "../../../public/images/2022/tano_text.png"
@@ -19,7 +18,7 @@ const Hero = () => {
     delay: 300,
   });
 
-  const heroImages = [heroPic0, heroPicB, heroPicC];
+  const heroImages = [heroPicD, heroPic0, heroPicB];
 
   const [activeIndex, setActiveIndex] = useState(1);
   const autoPlayRef = useRef(null);
