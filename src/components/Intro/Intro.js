@@ -63,7 +63,7 @@ const Intro = () => {
             </p>
 
             <div className="mt-4 sm:mt-12 bg-black text-white py-2 px-4 font-serif text-lg sm:text-2xl">
-              <h3>2022年12月18日(日)発売予定</h3>
+              <h3>2022年12月23日(金)発売予定</h3>
             </div>
           </div>
         </div>
