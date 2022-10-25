@@ -37,7 +37,7 @@ const ProductDetail = () => {
     },
     {
       label: `販売日`,
-      content: `2022年 12月18日（日）※予定`,
+      content: `2022年 12月23日（金）※予定`,
     },
   ];
 
