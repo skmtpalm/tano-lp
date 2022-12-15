@@ -12,8 +12,8 @@ const Banners = () => {
     >
       <div className="container ml-auto flex flex-col">
         <BannerBtn
-          title={`ご予約フォーム`}
-          text={`ご予約はこちら`}
+          title={`購入はこちら`}
+          text={`そのだ農園ECサイトへ`}
         />
         <Banner
           id={"contact"}
