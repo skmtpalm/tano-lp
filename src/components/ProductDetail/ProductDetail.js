@@ -1,4 +1,4 @@
-import productPic from "../../../public/images/2022/tano2022.jpg"
+import productPic from "../../../public/images/2022/tano2022.jpg";
 import Image from "next/image";
 import clsx from "clsx";
 import s from "./ProductDetail.module.css";
@@ -13,7 +13,7 @@ const ProductDetail = () => {
     },
     {
       label: `使用米`,
-      content: `島田市産コシヒカリ100%使用（農薬・化学肥料不使用）`,
+      content: `島田市産コシヒカリ100%使用（有機栽培米使用）`,
     },
     {
       label: `精米歩合`,
@@ -35,10 +35,6 @@ const ProductDetail = () => {
       label: `販売店`,
       content: `そのだ農園（島田市東光寺155）`,
     },
-    {
-      label: `販売日`,
-      content: `2022年 12月23日（金）※予定`,
-    },
   ];
 
   const [ref, inView] = useInView({
@@ -52,10 +48,7 @@ const ProductDetail = () => {
           <div className="sm:w-1/2">
             <Image src={productPic} alt="tano" />
           </div>
-          <div
-            ref={ref}
-            className="bg-black p-8 sm:p-12 flex flex-col justify-between"
-          >
+          <div ref={ref} className="bg-black p-8 sm:p-12 flex flex-col justify-between">
             <div className="flex justify-between">
               <h3 className={clsx(s.title)}>商品情報</h3>
             </div>

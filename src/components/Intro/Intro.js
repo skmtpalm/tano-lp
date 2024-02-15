@@ -1,10 +1,9 @@
 import clsx from "clsx";
 import s from "./Intro.module.css";
 import bgTexture from "../../../public/images/main_bg_texture.png";
-import introPic01 from "../../../public/images/2022/intro_01.jpg"
-import introPic02 from "../../../public/images/2022/hiro_01.jpg"
+import introPic01 from "../../../public/images/2022/intro_01.jpg";
+import introPic02 from "../../../public/images/2022/hiro_01.jpg";
 import Image from "next/image";
-
 
 const Intro = () => {
   const texts = [
@@ -22,7 +21,7 @@ const Intro = () => {
 
   const texts2 = [
     "静岡県島田市の『そのだ農園』による米・コシヒカリ（精米歩合90%）を使用。農薬・化学肥料を一切使わず丁寧に手植えしたお米です。",
-    "全国にもめずらしい室町時代からの造り『菩提酛』で仕込みました。",
+    "米と微生物たちの力を借り、自然の流れに沿って旨味をじっくり引き出した 原点回帰の地酒が完成しました、故郷の味・島田の味を、ご賞味ください。",
   ];
 
   return (
@@ -52,8 +51,8 @@ const Intro = () => {
             <Image src={introPic02} alt="about tano" />
           </div>
           <div className="sm:w-2/5 w-full sm:py-8">
-            <h2 className={clsx(s.title)}>菩提酛 田の 2022</h2>
-            <p className={clsx(s.subTitle)}>TANO 2022</p>
+            <h2 className={clsx(s.title)}>自然酒 田の</h2>
+            <p className={clsx(s.subTitle)}>TANO</p>
             <p className="mr-8 sm:mr-12 leading-10">
               {texts2.map((text, index) => (
                 <span key={index} className={clsx(s.text2)}>
@@ -61,10 +60,6 @@ const Intro = () => {
                 </span>
               ))}
             </p>
-
-            <div className="mt-4 sm:mt-12 bg-black text-white py-2 px-4 font-serif text-lg sm:text-2xl">
-              <h3>2022年12月23日(金)発売予定</h3>
-            </div>
           </div>
         </div>
       </div>
